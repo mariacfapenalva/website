@@ -1,0 +1,4 @@
+/* styles.css */
+body { font-family: system-ui, Arial, sans-serif; margin: 0; padding: 2rem; }
+header { margin-bottom: 1rem; }
+button { padding: .6rem 1rem; border-radius: .5rem; border: 1px solid #ccc; cursor: pointer; }
