@@ -1,5 +1,3 @@
-// ...existing code...
-// All form and database-related code removed
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
