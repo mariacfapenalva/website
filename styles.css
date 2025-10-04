@@ -58,6 +58,12 @@ body {
   letter-spacing: -0.5px;
 }
 
+.logo img {
+  height: 50px;
+  width: auto;
+  display: block;
+}
+
 .nav-menu {
   display: flex;
   list-style: none;
