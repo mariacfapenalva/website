@@ -43,36 +43,41 @@ function applyTranslations(lang) {
   document.querySelector('[data-lang="about-p3"]').textContent = t.about.paragraph3;
   document.querySelector('[data-lang="about-p4"]').textContent = t.about.paragraph4;
 
-  document.querySelector('[data-lang="stat-years"]').textContent = t.about.stats.years;
-  document.querySelector('[data-lang="stat-clients"]').textContent = t.about.stats.clients;
-  document.querySelector('[data-lang="stat-satisfaction"]').textContent = t.about.stats.satisfaction;
-
   document.querySelector('[data-lang="footer-copyright"]').textContent = t.footer.copyright;
 }
 
-function toggleLanguage() {
-  currentLang = currentLang === 'nl' ? 'en' : 'nl';
+function switchLanguage(lang) {
+  currentLang = lang;
   localStorage.setItem('language', currentLang);
   document.documentElement.setAttribute('lang', currentLang);
   applyTranslations(currentLang);
-  updateLanguageButton();
+  updateLanguageButtons();
 }
 
-function updateLanguageButton() {
-  const langBtn = document.querySelector('.lang-toggle');
-  langBtn.setAttribute('data-lang', currentLang);
-  langBtn.setAttribute('aria-label', currentLang === 'nl' ? 'Switch to English' : 'Schakel naar Nederlands');
+function updateLanguageButtons() {
+  const flags = document.querySelectorAll('.lang-flag');
+  flags.forEach(flag => {
+    const flagLang = flag.getAttribute('data-lang');
+    if (flagLang === currentLang) {
+      flag.classList.add('active');
+    } else {
+      flag.classList.remove('active');
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   document.documentElement.setAttribute('lang', currentLang);
   applyTranslations(currentLang);
-  updateLanguageButton();
+  updateLanguageButtons();
 
-  const langToggle = document.querySelector('.lang-toggle');
-  if (langToggle) {
-    langToggle.addEventListener('click', toggleLanguage);
-  }
+  const langFlags = document.querySelectorAll('.lang-flag');
+  langFlags.forEach(flag => {
+    flag.addEventListener('click', () => {
+      const lang = flag.getAttribute('data-lang');
+      switchLanguage(lang);
+    });
+  });
 });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {

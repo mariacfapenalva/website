@@ -20,15 +20,24 @@
         <li><a href="#about" class="nav-link" data-lang="nav-about">About</a></li>
       </ul>
       <div class="nav-actions">
-        <button class="lang-toggle" aria-label="Switch to English">
-          <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
-            <rect width="60" height="30" fill="#012169" />
-            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
-            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" stroke-linecap="round" />
-            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
-            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
-          </svg>
-        </button>
+        <div class="lang-toggle-group">
+          <button class="lang-flag active" data-lang="nl" aria-label="Nederlands">
+            <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+              <rect width="900" height="600" fill="#21468B"/>
+              <rect width="900" height="400" fill="#FFF"/>
+              <rect width="900" height="200" fill="#AE1C28"/>
+            </svg>
+          </button>
+          <button class="lang-flag" data-lang="en" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="30" fill="#012169" />
+              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" stroke-linecap="round" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+            </svg>
+          </button>
+        </div>
         <button class="mobile-menu-toggle" aria-label="Toggle menu">
           <span></span>
           <span></span>
@@ -146,14 +155,7 @@
     <div class="container">
       <div class="about-content">
         <div class="about-image">
-          <div class="image-placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
+          <img src="team.jpeg" alt="Crystal Clear Team" class="team-photo" />
         </div>
         <div class="about-text">
           <h2 class="section-title" data-lang="about-title">About Us</h2>

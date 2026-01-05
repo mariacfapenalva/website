@@ -59,7 +59,7 @@ body {
 }
 
 .logo img {
-  height: 120px;
+  height: 160px;
   width: auto;
   display: block;
 }
@@ -103,7 +103,13 @@ body {
   gap: calc(var(--spacing-unit) * 2);
 }
 
-.lang-toggle {
+.lang-toggle-group {
+  display: flex;
+  gap: calc(var(--spacing-unit) * 1);
+  align-items: center;
+}
+
+.lang-flag {
   background: none;
   border: 2px solid var(--primary-blue);
   border-radius: 8px;
@@ -113,12 +119,19 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.5;
 }
 
-.lang-toggle:hover {
-  background: var(--primary-blue);
+.lang-flag:hover {
+  opacity: 0.8;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 113, 168, 0.2);
+}
+
+.lang-flag.active {
+  opacity: 1;
+  background: var(--primary-blue);
+  box-shadow: 0 4px 12px rgba(0, 113, 168, 0.3);
 }
 
 .flag-icon {
@@ -453,24 +466,13 @@ body {
   position: relative;
 }
 
-.image-placeholder {
+.team-photo {
   width: 100%;
-  aspect-ratio: 1;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
+  height: auto;
   border-radius: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.3);
-}
-
-.image-placeholder svg {
-  width: 120px;
-  height: 120px;
-  color: var(--white);
-  opacity: 0.5;
+  object-fit: cover;
 }
 
 .about-text {
@@ -527,7 +529,7 @@ body {
 /* All form and contact section styles removed */
 
 .footer {
-  background: var(--text-dark);
+  background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--light-blue) 100%);
   color: var(--white);
   padding: calc(var(--spacing-unit) * 6) 0;
 }
