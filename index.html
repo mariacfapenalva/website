@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <head>
   <meta charset="UTF-8" />
@@ -15,29 +15,39 @@
         <img src="logo.png" alt="Crystal Clear Cleaning Services" />
       </div>
       <ul class="nav-menu">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <!-- Contact link removed -->
+        <li><a href="#home" class="nav-link" data-lang="nav-home">Home</a></li>
+        <li><a href="#services" class="nav-link" data-lang="nav-services">Services</a></li>
+        <li><a href="#about" class="nav-link" data-lang="nav-about">About</a></li>
       </ul>
-      <button class="mobile-menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="nav-actions">
+        <button class="lang-toggle" aria-label="Switch to English">
+          <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="30" fill="#012169"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" stroke-linecap="round"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+          </svg>
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <section id="home" class="hero">
     <div class="hero-content">
       <h1 class="hero-title">
-        <span class="title-line">Your Space,</span>
-        <span class="title-line">Our Priority</span>
+        <span class="title-line" data-lang="hero-title1">Your Space,</span>
+        <span class="title-line" data-lang="hero-title2">Our Priority</span>
       </h1>
-      <p class="hero-subtitle">Professional cleaning services that bring sparkle and freshness to every corner of your
+      <p class="hero-subtitle" data-lang="hero-subtitle">Professional cleaning services that bring sparkle and freshness to every corner of your
         home or office</p>
       <div class="hero-buttons">
-        <a href="#services" class="btn btn-secondary">Our Services</a>
+        <a href="#services" class="btn btn-secondary" data-lang="hero-services-btn">Our Services</a>
       </div>
     </div>
     <div class="hero-decorations">
@@ -49,8 +59,8 @@
 
   <section id="services" class="services">
     <div class="container">
-      <h2 class="section-title">Our Services</h2>
-      <p class="section-subtitle">Comprehensive cleaning solutions tailored to your needs</p>
+      <h2 class="section-title" data-lang="services-title">Our Services</h2>
+      <p class="section-subtitle" data-lang="services-subtitle">Comprehensive cleaning solutions tailored to your needs</p>
 
       <div class="services-grid">
         <div class="service-card">
@@ -60,13 +70,13 @@
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
           </div>
-          <h3 class="service-title">Residential Cleaning</h3>
-          <p class="service-description">Complete home cleaning including dusting, vacuuming, mopping, and sanitizing
+          <h3 class="service-title" data-lang="service-residential-title">Residential Cleaning</h3>
+          <p class="service-description" data-lang="service-residential-desc">Complete home cleaning including dusting, vacuuming, mopping, and sanitizing
             all living spaces</p>
           <ul class="service-features">
-            <li>Deep cleaning</li>
-            <li>Regular maintenance</li>
-            <li>Move-in/out cleaning</li>
+            <li data-lang="service-residential-feature-0">Deep cleaning</li>
+            <li data-lang="service-residential-feature-1">Regular maintenance</li>
+            <li data-lang="service-residential-feature-2">Move-in/out cleaning</li>
           </ul>
         </div>
 
@@ -77,13 +87,13 @@
               <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
             </svg>
           </div>
-          <h3 class="service-title">Commercial Cleaning</h3>
-          <p class="service-description">Professional office and commercial space cleaning to maintain a pristine work
+          <h3 class="service-title" data-lang="service-commercial-title">Commercial Cleaning</h3>
+          <p class="service-description" data-lang="service-commercial-desc">Professional office and commercial space cleaning to maintain a pristine work
             environment</p>
           <ul class="service-features">
-            <li>Office spaces</li>
-            <li>Retail stores</li>
-            <li>After-hours service</li>
+            <li data-lang="service-commercial-feature-0">Office spaces</li>
+            <li data-lang="service-commercial-feature-1">Retail stores</li>
+            <li data-lang="service-commercial-feature-2">After-hours service</li>
           </ul>
         </div>
 
@@ -94,12 +104,12 @@
               <path d="M12 6v6l4 2"></path>
             </svg>
           </div>
-          <h3 class="service-title">One-Time Cleaning</h3>
-          <p class="service-description">Perfect for special occasions, events, or when you need an extra deep clean</p>
+          <h3 class="service-title" data-lang="service-onetime-title">One-Time Cleaning</h3>
+          <p class="service-description" data-lang="service-onetime-desc">Perfect for special occasions, events, or when you need an extra deep clean</p>
           <ul class="service-features">
-            <li>Event preparation</li>
-            <li>Post-renovation</li>
-            <li>Seasonal cleaning</li>
+            <li data-lang="service-onetime-feature-0">Event preparation</li>
+            <li data-lang="service-onetime-feature-1">Post-renovation</li>
+            <li data-lang="service-onetime-feature-2">Seasonal cleaning</li>
           </ul>
         </div>
 
@@ -113,13 +123,13 @@
               <polyline points="10 9 9 9 8 9"></polyline>
             </svg>
           </div>
-          <h3 class="service-title">Custom Plans</h3>
-          <p class="service-description">Flexible cleaning schedules and customized service packages to fit your unique
+          <h3 class="service-title" data-lang="service-custom-title">Custom Plans</h3>
+          <p class="service-description" data-lang="service-custom-desc">Flexible cleaning schedules and customized service packages to fit your unique
             needs</p>
           <ul class="service-features">
-            <li>Weekly/bi-weekly</li>
-            <li>Monthly service</li>
-            <li>Tailored packages</li>
+            <li data-lang="service-custom-feature-0">Weekly/bi-weekly</li>
+            <li data-lang="service-custom-feature-1">Monthly service</li>
+            <li data-lang="service-custom-feature-2">Tailored packages</li>
           </ul>
         </div>
       </div>
@@ -140,29 +150,35 @@
           </div>
         </div>
         <div class="about-text">
-          <h2 class="section-title">About Us</h2>
-          <p class="about-description">
+          <h2 class="section-title" data-lang="about-title">About Us</h2>
+          <p class="about-description" data-lang="about-p1">
             At Crystal Clear, we believe that a clean space is the foundation for a productive and peaceful life. With
             over 10 years of experience in the cleaning industry, our dedicated team brings professionalism, attention
             to detail, and a commitment to excellence to every job.
           </p>
-          <p class="about-description">
+          <p class="about-description" data-lang="about-p2">
             We use eco-friendly products and proven cleaning techniques to ensure your space is not only spotless but
             also safe for your family, pets, and the environment. Our fully trained and insured staff takes pride in
             delivering consistent, high-quality results that exceed expectations.
           </p>
+          <p class="about-description" data-lang="about-p3">
+            Our quality comes from consistent methods and strong commitment. We aim for the same level of results every time.
+          </p>
+          <p class="about-description" data-lang="about-p4">
+            A clean environment creates comfort and peace of mind.
+          </p>
           <div class="about-stats">
             <div class="stat-item">
               <div class="stat-number">10+</div>
-              <div class="stat-label">Years Experience</div>
+              <div class="stat-label" data-lang="stat-years">Years Experience</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">500+</div>
-              <div class="stat-label">Happy Clients</div>
+              <div class="stat-label" data-lang="stat-clients">Happy Clients</div>
             </div>
             <div class="stat-item">
               <div class="stat-number">100%</div>
-              <div class="stat-label">Satisfaction</div>
+              <div class="stat-label" data-lang="stat-satisfaction">Satisfaction</div>
             </div>
           </div>
         </div>
@@ -177,7 +193,7 @@
           <h3>Crystal Clear</h3>
         </div>
         <div class="footer-copyright">
-          <p>&copy; 2025 Crystal Clear. All rights reserved.</p>
+          <p data-lang="footer-copyright">&copy; 2025 Crystal Clear. All rights reserved.</p>
         </div>
       </div>
     </div>
