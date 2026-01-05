@@ -45,7 +45,7 @@ body {
 .nav-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: calc(var(--spacing-unit) * 1) calc(var(--spacing-unit) * 3);
+  padding: calc(var(--spacing-unit) * 0.5) calc(var(--spacing-unit) * 3);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,7 +59,7 @@ body {
 }
 
 .logo img {
-  height: 160px;
+  height: 130px;
   width: auto;
   display: block;
 }
@@ -170,7 +170,7 @@ body {
 
 .hero-content {
   max-width: 1200px;
-  padding: calc(var(--spacing-unit) * 8) calc(var(--spacing-unit) * 3);
+  padding: calc(var(--spacing-unit) * 12) calc(var(--spacing-unit) * 3);
   text-align: center;
   position: relative;
   z-index: 2;
