@@ -40,12 +40,7 @@ export const translations = {
       paragraph1: 'Wij zijn een schoonmaakbedrijf dat werkt met aandacht, openheid en duidelijke communicatie. Onze flexibiliteit zit in twee dingen: werktijden die we kunnen aanpassen aan wat een klant nodig heeft, en diensten die we afstemmen op de situatie. Daardoor sluiten we aan op uiteenlopende wensen.',
       paragraph2: 'We vinden eerlijkheid belangrijk. Klanten weten precies waar ze aan toe zijn en wat ze van ons kunnen verwachten. Tijdens het werk houden we goed contact, zodat afspraken helder blijven en we snel kunnen bijsturen als dat nodig is.',
       paragraph3: 'Onze kwaliteit komt voort uit vaste werkwijzen en een sterke inzet van ons team. We streven naar een resultaat dat telkens hetzelfde niveau haalt. Consistentie, klantgericht werken en een betrouwbare houding vormen de kern van onze aanpak.',
-      paragraph4: 'Een schone omgeving geeft rust. Met die gedachte verzorgen wij elke opdracht, groot of klein.',
-      stats: {
-        years: 'Jaar Ervaring',
-        clients: 'Tevreden Klanten',
-        satisfaction: 'Tevredenheid'
-      }
+      paragraph4: 'Een schone omgeving geeft rust. Met die gedachte verzorgen wij elke opdracht, groot of klein.'
     },
     footer: {
       copyright: '© 2025 Crystal Clear. Alle rechten voorbehouden.'
@@ -93,11 +88,6 @@ export const translations = {
       paragraph2: 'Honesty is at the core of how we work. Clients know exactly what to expect from us. Throughout every job, we maintain clear communication so agreements stay transparent and adjustments can be made quickly when needed.',
       paragraph3: 'Our quality comes from consistent methods and strong commitment. We aim for the same level of results every time. Customer focus, steady performance, and a dependable attitude form the foundation of our approach.',
       paragraph4: 'A clean environment creates comfort and peace of mind. With that in mind, we handle every task, big or small, with care.',
-      stats: {
-        years: 'Years Experience',
-        clients: 'Happy Clients',
-        satisfaction: 'Satisfaction'
-      }
     },
     footer: {
       copyright: '© 2025 Crystal Clear. All rights reserved.'
