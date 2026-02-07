@@ -14,7 +14,6 @@ function applyTranslations(lang) {
   document.querySelector('[data-lang="hero-title1"]').textContent = t.hero.title1;
   document.querySelector('[data-lang="hero-title2"]').textContent = t.hero.title2;
   document.querySelector('[data-lang="hero-subtitle"]').textContent = t.hero.subtitle;
-  document.querySelector('[data-lang="hero-cta-text"]').textContent = t.hero.ctaText;
   document.querySelector('[data-lang="hero-quote-btn"]').textContent = t.hero.quoteBtn;
   document.querySelector('[data-lang="hero-services-btn"]').textContent = t.hero.servicesBtn;
 
