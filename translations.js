@@ -3,13 +3,27 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Diensten',
-      about: 'Over Ons'
+      howWeWork: 'Hoe We Werken',
+      about: 'Over Ons',
+      cta: 'Offerte Aanvragen'
     },
     hero: {
       title1: 'Uw Ruimte,',
       title2: 'Onze Prioriteit',
       subtitle: 'Professionele schoonmaakdiensten die frisheid en glans brengen in elke hoek van uw huis of kantoor',
+      ctaText: 'Vraag direct een offerte aan - Reactie binnen 24 uur',
+      quoteBtn: 'Offerte Aanvragen',
       servicesBtn: 'Onze Diensten'
+    },
+    why: {
+      title: 'Waarom Bedrijven Voor Ons Kiezen',
+      items: [
+        'Gespecialiseerd in retail & commerciële ruimtes',
+        'Vaste teams - betrouwbaar en discreet',
+        'Schoonmaak buiten werktijden mogelijk',
+        'Volledig verzekerd en professioneel getraind personeel',
+        'Milieuvriendelijke schoonmaakopties'
+      ]
     },
     services: {
       title: 'Onze Diensten',
@@ -35,14 +49,53 @@ export const translations = {
         features: ['Wekelijks/tweewekelijks', 'Maandelijkse service', 'Pakketten op maat']
       }
     },
+    howWeWork: {
+      title: 'Hoe We Werken',
+      subtitle: 'Ons proces in 4 stappen',
+      steps: [
+        {
+          title: 'Kennismaking & Locatie-inspectie',
+          description: 'We bezoeken uw locatie om uw specifieke wensen te begrijpen en de ruimte te beoordelen'
+        },
+        {
+          title: 'Schoonmaakplan Op Maat',
+          description: 'We creëren een aangepast schoonmaakplan dat past bij uw planning en eisen'
+        },
+        {
+          title: 'Uitvoering Door Vast Team',
+          description: 'Onze getrainde professionals voeren het plan uit met aandacht voor detail en consistentie'
+        },
+        {
+          title: 'Evaluatie & Bijsturing',
+          description: 'We evalueren regelmatig de resultaten en maken aanpassingen om uw tevredenheid te garanderen'
+        }
+      ],
+      tagline: 'Transparant, efficiënt en professioneel.'
+    },
+    credibility: {
+      title: 'Professioneel, Betrouwbaar en Transparant',
+      items: [
+        '10+ jaar ervaring in professionele schoonmaak',
+        'Dienstverlening aan retail en service-georiënteerde bedrijven',
+        'Heldere afspraken & vast aanspreekpunt',
+        'Tevredenheidsgarantie'
+      ]
+    },
+    finalCta: {
+      title: 'Op Zoek Naar Een Betrouwbare Schoonmaakpartner?',
+      subtitle: 'We denken graag met u mee.',
+      button: 'Vraag Een Gratis, Vrijblijvende Offerte Aan',
+      response: 'Reactie binnen 24 uur'
+    },
     about: {
       title: 'Over Ons',
-      paragraph1: 'Wij zijn een schoonmaakbedrijf dat werkt met aandacht, openheid en duidelijke communicatie. Onze flexibiliteit zit in twee dingen: werktijden die we kunnen aanpassen aan wat een klant nodig heeft, en diensten die we afstemmen op de situatie. Daardoor sluiten we aan op uiteenlopende wensen.',
-      paragraph2: 'We vinden eerlijkheid belangrijk. Klanten weten precies waar ze aan toe zijn en wat ze van ons kunnen verwachten. Tijdens het werk houden we goed contact, zodat afspraken helder blijven en we snel kunnen bijsturen als dat nodig is.',
-      paragraph3: 'Onze kwaliteit komt voort uit vaste werkwijzen en een sterke inzet van ons team. We streven naar een resultaat dat telkens hetzelfde niveau haalt. Consistentie, klantgericht werken en een betrouwbare houding vormen de kern van onze aanpak.',
-      paragraph4: 'Een schone omgeving geeft rust. Met die gedachte verzorgen wij elke opdracht, groot of klein.'
+      paragraph1: 'Wij zijn een professioneel schoonmaakbedrijf met jarenlange ervaring in commerciële schoonmaakdiensten.',
+      paragraph2: 'Onze focus ligt op betrouwbaarheid, kwaliteit en langetermijnpartnerschappen met zakelijke klanten.',
+      paragraph3: 'We begrijpen dat schoonmaak geen bijzaak is, maar een essentieel onderdeel van uw bedrijfsvoering.'
     },
     footer: {
+      serviceArea: 'Actief in Amsterdam en omgeving (Amstelveen, Haarlem, Zaandam, Almere)',
+      cta: 'Offerte Aanvragen',
       copyright: '© 2025 Crystal Clear. Alle rechten voorbehouden.'
     }
   },
@@ -50,13 +103,27 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Services',
-      about: 'About'
+      howWeWork: 'How We Work',
+      about: 'About',
+      cta: 'Request Quote'
     },
     hero: {
       title1: 'Your Space,',
       title2: 'Our Priority',
       subtitle: 'Professional cleaning services that bring sparkle and freshness to every corner of your home or office',
+      ctaText: 'Request a quote directly - Response within 24 hours',
+      quoteBtn: 'Request Quote',
       servicesBtn: 'Our Services'
+    },
+    why: {
+      title: 'Why Businesses Choose Us',
+      items: [
+        'Specialized in retail & commercial spaces',
+        'Dedicated teams - reliable and discreet',
+        'After-hours cleaning available',
+        'Fully insured and professionally trained staff',
+        'Eco-friendly cleaning options'
+      ]
     },
     services: {
       title: 'Our Services',
@@ -82,14 +149,53 @@ export const translations = {
         features: ['Weekly/bi-weekly', 'Monthly service', 'Tailored packages']
       }
     },
+    howWeWork: {
+      title: 'How We Work',
+      subtitle: 'Our process in 4 steps',
+      steps: [
+        {
+          title: 'Introduction & Site Assessment',
+          description: 'We visit your location to understand your specific needs and assess the space'
+        },
+        {
+          title: 'Tailored Cleaning Plan',
+          description: 'We create a customized cleaning plan that fits your schedule and requirements'
+        },
+        {
+          title: 'Execution by Dedicated Team',
+          description: 'Our trained professionals execute the plan with attention to detail and consistency'
+        },
+        {
+          title: 'Evaluation & Adjustments',
+          description: 'We regularly evaluate results and make adjustments to ensure your satisfaction'
+        }
+      ],
+      tagline: 'Transparent, efficient, and professional.'
+    },
+    credibility: {
+      title: 'Professional, Reliable, and Transparent',
+      items: [
+        '10+ years of experience in professional cleaning',
+        'Serving retail and service-based businesses',
+        'Clear agreements & fixed point of contact',
+        'Satisfaction guarantee'
+      ]
+    },
+    finalCta: {
+      title: 'Looking for a Reliable Cleaning Partner?',
+      subtitle: 'We\'re happy to think along with you.',
+      button: 'Request a Free, No-Obligation Quote',
+      response: 'Response within 24 hours'
+    },
     about: {
       title: 'About Us',
-      paragraph1: 'We are a cleaning company built on reliability, clarity, and attention to detail. Our flexibility shows in two ways: we adjust our working hours to what the client needs, and we tailor our services to different situations. This allows us to meet a wide range of requests.',
-      paragraph2: 'Honesty is at the core of how we work. Clients know exactly what to expect from us. Throughout every job, we maintain clear communication so agreements stay transparent and adjustments can be made quickly when needed.',
-      paragraph3: 'Our quality comes from consistent methods and strong commitment. We aim for the same level of results every time. Customer focus, steady performance, and a dependable attitude form the foundation of our approach.',
-      paragraph4: 'A clean environment creates comfort and peace of mind. With that in mind, we handle every task, big or small, with care.',
+      paragraph1: 'We are a professional cleaning company with years of experience in commercial cleaning services.',
+      paragraph2: 'Our focus is on reliability, quality, and long-term partnerships with business clients.',
+      paragraph3: 'We understand that cleaning is not a side task, but an essential part of your operations.'
     },
     footer: {
+      serviceArea: 'Active in Amsterdam and surrounding areas (Amstelveen, Haarlem, Zaandam, Almere)',
+      cta: 'Request Quote',
       copyright: '© 2025 Crystal Clear. All rights reserved.'
     }
   }
