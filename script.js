@@ -49,6 +49,11 @@ function applyTranslations(lang) {
   const customFeatures = document.querySelectorAll('[data-lang^="service-custom-feature"]');
   customFeatures.forEach((el, i) => el.textContent = t.services.custom.features[i]);
 
+  safeUpdate('[data-lang="service-decluttering-title"]', t.services.decluttering.title);
+  safeUpdate('[data-lang="service-decluttering-desc"]', t.services.decluttering.description);
+  const declutteringFeatures = document.querySelectorAll('[data-lang^="service-decluttering-feature"]');
+  declutteringFeatures.forEach((el, i) => el.textContent = t.services.decluttering.features[i]);
+
   safeUpdate('[data-lang="how-title"]', t.howWeWork.title);
   safeUpdate('[data-lang="how-subtitle"]', t.howWeWork.subtitle);
   safeUpdate('[data-lang="step-1-title"]', t.howWeWork.steps[0].title);

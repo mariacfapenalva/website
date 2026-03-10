@@ -47,6 +47,11 @@ export const translations = {
         title: 'Maatwerk Pakketten',
         description: 'Flexibele schoonmaakschema\'s en aangepaste servicepakketten die aansluiten op uw unieke behoeften',
         features: ['Wekelijks/tweewekelijks', 'Maandelijkse service', 'Pakketten op maat']
+      },
+      decluttering: {
+        title: 'Opruimservice',
+        description: 'Professionele hulp bij het opruimen en organiseren van overvolle ruimtes voor verhuizingen, verkoop of renovaties',
+        features: ['Sorteren en organiseren', 'Items verwijderen', 'Verhuisvoorbereiding']
       }
     },
     howWeWork: {
@@ -147,6 +152,11 @@ export const translations = {
         title: 'Custom Plans',
         description: 'Flexible cleaning schedules and customized service packages to fit your unique needs',
         features: ['Weekly/bi-weekly', 'Monthly service', 'Tailored packages']
+      },
+      decluttering: {
+        title: 'Decluttering Service',
+        description: 'Professional help clearing and organizing cluttered spaces for moves, sales, or renovations',
+        features: ['Sorting and organizing', 'Item removal', 'Move preparation']
       }
     },
     howWeWork: {

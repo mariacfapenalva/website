@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services - Crystal Clear</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="services-page.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="logo.png" alt="Crystal Clear Cleaning Services" />
+        </a>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html#home" class="nav-link" data-lang="nav-home">Home</a></li>
+        <li><a href="index.html#services" class="nav-link" data-lang="nav-services">Services</a></li>
+        <li><a href="index.html#how-we-work" class="nav-link" data-lang="nav-how-we-work">How We Work</a></li>
+        <li><a href="index.html#about" class="nav-link" data-lang="nav-about">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="index.html#quote" class="btn btn-primary btn-nav-cta" data-lang="nav-cta">Request Quote</a>
+        <div class="lang-toggle-group">
+          <button class="lang-flag active" data-lang="nl" aria-label="Nederlands">
+            <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+              <rect width="900" height="600" fill="#21468B"/>
+              <rect width="900" height="400" fill="#FFF"/>
+              <rect width="900" height="200" fill="#AE1C28"/>
+            </svg>
+          </button>
+          <button class="lang-flag" data-lang="en" aria-label="English">
+            <svg class="flag-icon" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+              <rect width="60" height="30" fill="#012169" />
+              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6" />
+              <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4" stroke-linecap="round" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10" />
+              <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6" />
+            </svg>
+          </button>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="service-detail-page">
+    <section class="service-hero" id="service-hero">
+      <div class="service-hero-content">
+        <a href="index.html#services" class="back-link">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span data-lang="back-to-services">Back to Services</span>
+        </a>
+        <div class="service-icon-large" id="service-icon">
+        </div>
+        <h1 class="service-hero-title" id="service-title"></h1>
+        <p class="service-hero-subtitle" id="service-intro"></p>
+      </div>
+    </section>
+
+    <section class="service-content">
+      <div class="container">
+        <div class="service-details">
+          <div class="detail-section fade-in">
+            <h2 data-lang="what-we-do">What We Do</h2>
+            <p id="what-we-do-content"></p>
+          </div>
+
+          <div class="detail-section fade-in">
+            <h2 data-lang="what-includes">What's Included</h2>
+            <ul class="included-list" id="included-list"></ul>
+          </div>
+
+          <div class="detail-section fade-in" id="ideal-for-section">
+            <h2 data-lang="ideal-for">Ideal For</h2>
+            <ul class="ideal-for-list" id="ideal-for-list"></ul>
+          </div>
+
+          <div class="detail-section fade-in" id="frequency-section">
+            <h2 data-lang="frequency-options">Frequency Options</h2>
+            <div class="frequency-grid" id="frequency-grid"></div>
+          </div>
+
+          <div class="cta-section">
+            <h2 data-lang="ready-to-start">Ready to Get Started?</h2>
+            <p data-lang="cta-description">Contact us for a free, no-obligation quote tailored to your needs.</p>
+            <a href="index.html#quote" class="btn btn-primary btn-large" data-lang="request-quote">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3>Crystal Clear</h3>
+          <p class="footer-service-area" data-lang="footer-service-area">Active in Amsterdam and surrounding areas (Amstelveen, Haarlem, Zaandam, Almere)</p>
+        </div>
+        <div class="footer-info">
+          <a href="mailto:info@crystalclear.nl" class="footer-contact">info@crystalclear.nl</a>
+          <a href="index.html#quote" class="btn btn-primary btn-footer-cta" data-lang="footer-cta">Request Quote</a>
+        </div>
+        <div class="footer-copyright">
+          <p data-lang="footer-copyright">&copy; 2025 Crystal Clear. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="services-page.js"></script>
+</body>
+
+</html>
