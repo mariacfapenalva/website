@@ -48,6 +48,7 @@ function applyPageTranslations(lang) {
   document.querySelector('[data-lang="nav-services"]').textContent = mainT.nav.services;
   document.querySelector('[data-lang="nav-how-we-work"]').textContent = mainT.nav.howWeWork;
   document.querySelector('[data-lang="nav-about"]').textContent = mainT.nav.about;
+  document.querySelector('[data-lang="nav-contact"]').textContent = mainT.nav.contact;
   document.querySelector('[data-lang="nav-cta"]').textContent = mainT.nav.cta;
   document.querySelector('[data-lang="footer-service-area"]').textContent = mainT.footer.serviceArea;
   document.querySelector('[data-lang="footer-cta"]').textContent = mainT.footer.cta;

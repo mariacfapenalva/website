@@ -416,3 +416,7 @@
     transform: translateX(4px);
   }
 }
+
+.cta-section .btn-pulse {
+  animation-name: ctaPulseLight;
+}

@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <nav class="navbar">
     <div class="nav-container">
       <div class="logo">
@@ -19,9 +20,10 @@
         <li><a href="#services" class="nav-link" data-lang="nav-services">Services</a></li>
         <li><a href="#how-we-work" class="nav-link" data-lang="nav-how-we-work">How We Work</a></li>
         <li><a href="#about" class="nav-link" data-lang="nav-about">About</a></li>
+        <li><a href="#quote" class="nav-link" data-i18n="nav.contact">Contact</a></li>
       </ul>
       <div class="nav-actions">
-        <a href="#quote" class="btn btn-primary btn-nav-cta" data-lang="nav-cta">Request Quote</a>
+        <a href="#quote" class="btn btn-primary btn-nav-cta" data-open-quote data-lang="nav-cta">Request Quote</a>
         <div class="lang-toggle-group">
           <button class="lang-flag active" data-lang="nl" aria-label="Nederlands">
             <svg class="flag-icon" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
@@ -58,74 +60,46 @@
       <p class="hero-subtitle" data-lang="hero-subtitle">Professional cleaning services that bring sparkle and freshness
         to every corner of your
         home or office</p>
-     
+
       <div class="hero-buttons">
-        <a href="#quote" class="btn btn-primary" data-lang="hero-quote-btn">Request Quote</a>
-        <a href="#services" class="btn btn-secondary" data-lang="hero-services-btn">Our Services</a>
+        <a href="#quote" class="btn btn-primary btn-xl btn-pulse" data-open-quote data-lang="hero-quote-btn">Request Quote</a>
+        <a href="#services" class="btn btn-secondary btn-xl" data-lang="hero-services-btn">Our Services</a>
       </div>
     </div>
     <div class="hero-decorations">
       <div class="decoration decoration-1"></div>
       <div class="decoration decoration-2"></div>
       <div class="decoration decoration-3"></div>
+      <span class="sparkle sparkle-1"></span>
+      <span class="sparkle sparkle-2"></span>
+      <span class="sparkle sparkle-3"></span>
+      <span class="sparkle sparkle-4"></span>
+      <span class="sparkle sparkle-5"></span>
     </div>
   </section>
 
-  <section id="why-choose-us" class="why-choose-us">
-    <div class="container">
-      <h2 class="section-title" data-lang="why-title">Why Businesses Choose Us</h2>
-      <div class="why-grid">
-        <div class="why-item">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-            </svg>
-          </div>
-          <p data-lang="why-item-0">Specialized in retail & commercial spaces</p>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-          </div>
-          <p data-lang="why-item-1">Dedicated teams - reliable and discreet</p>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"></circle>
-              <path d="M12 6v6l4 2"></path>
-            </svg>
-          </div>
-          <p data-lang="why-item-2">After-hours cleaning available</p>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-              <polyline points="22 4 12 14.01 9 11.01"></polyline>
-            </svg>
-          </div>
-          <p data-lang="why-item-3">Fully insured and professionally trained staff</p>
-        </div>
-        <div class="why-item">
-          <div class="why-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              <path d="M12 8v4"></path>
-              <path d="M12 16h.01"></path>
-            </svg>
-          </div>
-          <p data-lang="why-item-4">Eco-friendly cleaning options</p>
-        </div>
-      </div>
+  <div class="benefit-marquee" aria-label="Benefits">
+    <div class="benefit-marquee-track">
+      <ul class="benefit-marquee-list">
+        <li data-i18n="benefits.items.0.title">Reliable teams</li>
+        <li data-i18n="benefits.items.1.title">Consistent quality</li>
+        <li data-i18n="benefits.items.2.title">Flexible scheduling</li>
+        <li data-i18n="benefits.items.3.title">After-hours cleaning</li>
+        <li data-i18n="benefits.items.4.title">One fixed contact person</li>
+        <li data-i18n="benefits.items.5.title">Transparent agreements</li>
+        <li data-i18n="benefits.items.6.title">Fast communication</li>
+      </ul>
+      <ul class="benefit-marquee-list" aria-hidden="true">
+        <li data-i18n="benefits.items.0.title">Reliable teams</li>
+        <li data-i18n="benefits.items.1.title">Consistent quality</li>
+        <li data-i18n="benefits.items.2.title">Flexible scheduling</li>
+        <li data-i18n="benefits.items.3.title">After-hours cleaning</li>
+        <li data-i18n="benefits.items.4.title">One fixed contact person</li>
+        <li data-i18n="benefits.items.5.title">Transparent agreements</li>
+        <li data-i18n="benefits.items.6.title">Fast communication</li>
+      </ul>
     </div>
-  </section>
+  </div>
 
   <section id="services" class="services">
     <div class="container">
@@ -265,6 +239,118 @@
     </div>
   </section>
 
+
+  <section id="why-choose-us" class="why-choose-us">
+    <div class="container">
+      <span class="section-eyebrow" data-i18n="why.eyebrow">Why Crystal Clear</span>
+      <h2 class="section-title" data-lang="why-title">Why Businesses Choose Us</h2>
+      <p class="section-subtitle" data-i18n="why.subtitle">Four reasons businesses in Amsterdam and the surrounding area trust us with their cleaning</p>
+
+      <div class="why-showcase">
+        <div class="why-tabs" role="tablist">
+          <button class="why-tab active" role="tab" aria-selected="true" aria-controls="why-panel-0" id="why-tab-0" data-why-index="0">
+            <span class="why-tab-num">01</span>
+            <span class="why-tab-label" data-i18n="why.reasons.0.tab">Years of hands-on experience</span>
+            <span class="why-tab-progress"><span></span></span>
+          </button>
+          <button class="why-tab" role="tab" aria-selected="false" aria-controls="why-panel-1" id="why-tab-1" data-why-index="1">
+            <span class="why-tab-num">02</span>
+            <span class="why-tab-label" data-i18n="why.reasons.1.tab">Reliable teams</span>
+            <span class="why-tab-progress"><span></span></span>
+          </button>
+          <button class="why-tab" role="tab" aria-selected="false" aria-controls="why-panel-2" id="why-tab-2" data-why-index="2">
+            <span class="why-tab-num">03</span>
+            <span class="why-tab-label" data-i18n="why.reasons.2.tab">Flexible scheduling</span>
+            <span class="why-tab-progress"><span></span></span>
+          </button>
+          <button class="why-tab" role="tab" aria-selected="false" aria-controls="why-panel-3" id="why-tab-3" data-why-index="3">
+            <span class="why-tab-num">04</span>
+            <span class="why-tab-label" data-i18n="why.reasons.3.tab">One fixed contact person</span>
+            <span class="why-tab-progress"><span></span></span>
+          </button>
+        </div>
+
+        <div class="why-panels">
+          <article class="why-panel active" role="tabpanel" id="why-panel-0" aria-labelledby="why-tab-0">
+            <div class="why-panel-highlight">
+              <div class="why-highlight-value"><span data-i18n="why.reasons.0.prefix"></span><span data-count="10">10</span><span data-i18n="why.reasons.0.suffix">+</span></div>
+              <div class="why-highlight-label" data-i18n="why.reasons.0.label">years of hands-on experience</div>
+              <div class="why-panel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"></circle><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path></svg>
+              </div>
+            </div>
+            <div class="why-panel-body">
+              <h3 data-i18n="why.reasons.0.title">Years of hands-on experience in professional cleaning</h3>
+              <p data-i18n="why.reasons.0.desc"></p>
+              <ul class="why-points">
+                <li data-i18n="why.reasons.0.points.0"></li>
+                <li data-i18n="why.reasons.0.points.1"></li>
+                <li data-i18n="why.reasons.0.points.2"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-panel" role="tabpanel" id="why-panel-1" aria-labelledby="why-tab-1">
+            <div class="why-panel-highlight">
+              <div class="why-highlight-value"><span data-i18n="why.reasons.1.prefix"></span><span data-count="1">1</span><span data-i18n="why.reasons.1.suffix"></span></div>
+              <div class="why-highlight-label" data-i18n="why.reasons.1.label">dedicated team for your location</div>
+              <div class="why-panel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+              </div>
+            </div>
+            <div class="why-panel-body">
+              <h3 data-i18n="why.reasons.1.title">Reliable teams, consistent quality</h3>
+              <p data-i18n="why.reasons.1.desc"></p>
+              <ul class="why-points">
+                <li data-i18n="why.reasons.1.points.0"></li>
+                <li data-i18n="why.reasons.1.points.1"></li>
+                <li data-i18n="why.reasons.1.points.2"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-panel" role="tabpanel" id="why-panel-2" aria-labelledby="why-tab-2">
+            <div class="why-panel-highlight">
+              <div class="why-highlight-value"><span data-i18n="why.reasons.2.prefix"></span><span data-count="0">0</span><span data-i18n="why.reasons.2.suffix"></span></div>
+              <div class="why-highlight-label" data-i18n="why.reasons.2.label">disruption to your business</div>
+              <div class="why-panel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+              </div>
+            </div>
+            <div class="why-panel-body">
+              <h3 data-i18n="why.reasons.2.title">Flexible scheduling &amp; after-hours cleaning</h3>
+              <p data-i18n="why.reasons.2.desc"></p>
+              <ul class="why-points">
+                <li data-i18n="why.reasons.2.points.0"></li>
+                <li data-i18n="why.reasons.2.points.1"></li>
+                <li data-i18n="why.reasons.2.points.2"></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="why-panel" role="tabpanel" id="why-panel-3" aria-labelledby="why-tab-3">
+            <div class="why-panel-highlight">
+              <div class="why-highlight-value"><span data-i18n="why.reasons.3.prefix">&lt;</span><span data-count="24">24</span><span data-i18n="why.reasons.3.suffix">h</span></div>
+              <div class="why-highlight-label" data-i18n="why.reasons.3.label">response time</div>
+              <div class="why-panel-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              </div>
+            </div>
+            <div class="why-panel-body">
+              <h3 data-i18n="why.reasons.3.title">One fixed contact person &amp; clear agreements</h3>
+              <p data-i18n="why.reasons.3.desc"></p>
+              <ul class="why-points">
+                <li data-i18n="why.reasons.3.points.0"></li>
+                <li data-i18n="why.reasons.3.points.1"></li>
+                <li data-i18n="why.reasons.3.points.2"></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="how-we-work" class="how-we-work">
     <div class="container">
       <h2 class="section-title" data-lang="how-title">How We Work</h2>
@@ -290,59 +376,99 @@
           <h3 class="step-title" data-lang="step-4-title">Evaluation & Adjustments</h3>
           <p class="step-description" data-lang="step-4-desc">We regularly evaluate results and make adjustments to ensure your satisfaction</p>
         </div>
+      </div>
+    </div>
   </section>
 
- <section id="credibility" class="credibility">
-  <div class="container">
-    <h2 class="section-title" data-lang="credibility-title">Professional, Reliable, and Transparent</h2>
-    <div class="credibility-grid">
-      
-      <div class="credibility-item">
-        <div class="credibility-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-            <polyline points="22 4 12 14.01 9 11.01"></polyline>
-          </svg>
-        </div> <p data-lang="credibility-item-0">Registered and Certified</p> </div> <div class="credibility-item">
-        <div class="credibility-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-          </svg>
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <span class="section-eyebrow section-eyebrow-light" data-i18n="benefits.eyebrow">Our promise</span>
+      <h2 class="section-title" data-i18n="benefits.title">What You Get From Us</h2>
+      <p class="section-subtitle" data-i18n="benefits.subtitle">No vague promises: these are the concrete agreements you can count on.</p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+          <h3 data-i18n="benefits.items.0.title">Reliable teams</h3>
+          <p data-i18n="benefits.items.0.desc"></p>
         </div>
-        <p data-lang="credibility-item-1">Serving retail and service-based businesses</p>
-      </div>
-
-      <div class="credibility-item">
-        <div class="credibility-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-            <polyline points="14 2 14 8 20 8"></polyline>
-          </svg>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+          <h3 data-i18n="benefits.items.1.title">Consistent quality</h3>
+          <p data-i18n="benefits.items.1.desc"></p>
         </div>
-        <p data-lang="credibility-item-2">Clear agreements & fixed point of contact</p>
-      </div>
-
-      <div class="credibility-item">
-        <div class="credibility-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-          </svg>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+          <h3 data-i18n="benefits.items.2.title">Flexible scheduling</h3>
+          <p data-i18n="benefits.items.2.desc"></p>
         </div>
-        <p data-lang="credibility-item-3">Satisfaction guarantee</p>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></div>
+          <h3 data-i18n="benefits.items.3.title">After-hours cleaning</h3>
+          <p data-i18n="benefits.items.3.desc"></p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+          <h3 data-i18n="benefits.items.4.title">One fixed contact person</h3>
+          <p data-i18n="benefits.items.4.desc"></p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg></div>
+          <h3 data-i18n="benefits.items.5.title">Transparent agreements</h3>
+          <p data-i18n="benefits.items.5.desc"></p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg></div>
+          <h3 data-i18n="benefits.items.6.title">Fast communication</h3>
+          <p data-i18n="benefits.items.6.desc"></p>
+        </div>
+        <div class="benefit-card benefit-card-cta">
+          <div class="benefit-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><polyline points="9 12 11 14 15 10"></polyline></svg></div>
+          <h3 data-i18n="benefits.guarantee.title">Satisfaction guarantee</h3>
+          <p data-i18n="benefits.guarantee.desc"></p>
+          <button type="button" class="btn btn-secondary" data-open-quote data-i18n="benefits.guarantee.cta">Request a quote</button>
+        </div>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="quote" class="final-cta">
     <div class="container">
       <div class="final-cta-content">
+        <span class="section-eyebrow" data-i18n="contact.eyebrow">Contact</span>
         <h2 class="final-cta-title" data-lang="final-cta-title">Looking for a Reliable Cleaning Partner?</h2>
         <p class="final-cta-subtitle" data-lang="final-cta-subtitle">We're happy to think along with you.</p>
-        <a href="mailto:info@crystalclear.nl" class="btn btn-primary btn-large" data-lang="final-cta-btn">Request a Free, No-Obligation Quote</a>
+        <button type="button" class="btn btn-primary btn-xl btn-pulse" data-open-quote data-lang="final-cta-btn">Request a Free, No-Obligation Quote</button>
         <p class="final-cta-response" data-lang="final-cta-response">Response within 24 hours</p>
+
+        <div class="contact-cards">
+          <a href="https://wa.me/31623497876" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-card-icon contact-card-icon-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01a9.43 9.43 0 0 1-4.81-1.32l-.34-.2-3.58.94.96-3.49-.22-.36a9.44 9.44 0 0 1-1.45-5.03c0-5.22 4.25-9.46 9.47-9.46 2.53 0 4.9.99 6.69 2.78a9.4 9.4 0 0 1 2.77 6.69c0 5.22-4.25 9.46-9.46 9.46zm8.05-17.51A11.3 11.3 0 0 0 12.04.66C5.77.66.66 5.76.66 12.04c0 2 .52 3.96 1.52 5.69L.57 23.63l6.04-1.58a11.35 11.35 0 0 0 5.43 1.38h.01c6.27 0 11.38-5.1 11.38-11.38 0-3.04-1.18-5.9-3.34-8.05z"/></svg>
+            </span>
+            <span class="contact-card-text">
+              <span class="contact-card-label" data-i18n="contact.phoneLabel">Call or WhatsApp</span>
+              <span class="contact-card-value">+31 6 23 49 78 76</span>
+            </span>
+          </a>
+          <a href="mailto:info@crystalclear.nl" class="contact-card">
+            <span class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </span>
+            <span class="contact-card-text">
+              <span class="contact-card-label" data-i18n="contact.emailLabel">Email</span>
+              <span class="contact-card-value">info@crystalclear.nl</span>
+            </span>
+          </a>
+          <div class="contact-card contact-card-static">
+            <span class="contact-card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+            </span>
+            <span class="contact-card-text">
+              <span class="contact-card-label" data-i18n="contact.areaLabel">Service area</span>
+              <span class="contact-card-value" data-i18n="contact.areaValue">Amsterdam &amp; surroundings</span>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -367,8 +493,8 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
+
 
   <footer class="footer">
     <div class="container">
@@ -378,15 +504,67 @@
           <p class="footer-service-area" data-lang="footer-service-area">Active in Amsterdam and surrounding areas (Amstelveen, Haarlem, Zaandam, Almere)</p>
         </div>
         <div class="footer-info">
-          <a href="mailto:info@crystalclear.nl" class="footer-contact">info@crystalclear.nl</a>
-          <a href="#quote" class="btn btn-primary btn-footer-cta" data-lang="footer-cta">Request Quote</a>
+          <a href="mailto:info@crystalclear.nl" class="footer-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            info@crystalclear.nl
+          </a>
+          <a href="https://wa.me/31623497876" target="_blank" rel="noopener" class="footer-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            +31 6 23 49 78 76
+          </a>
+          <a href="#quote" class="btn btn-primary btn-footer-cta" data-open-quote data-lang="footer-cta">Request Quote</a>
         </div>
         <div class="footer-copyright">
-          <p data-lang="footer-copyright">&copy; 2025 Crystal Clear. All rights reserved.</p>
+          <p data-lang="footer-copyright">&copy; 2026 Crystal Clear. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/31623497876" target="_blank" rel="noopener" class="whatsapp-float" aria-label="WhatsApp +31 6 23 49 78 76">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01a9.43 9.43 0 0 1-4.81-1.32l-.34-.2-3.58.94.96-3.49-.22-.36a9.44 9.44 0 0 1-1.45-5.03c0-5.22 4.25-9.46 9.47-9.46 2.53 0 4.9.99 6.69 2.78a9.4 9.4 0 0 1 2.77 6.69c0 5.22-4.25 9.46-9.46 9.46zm8.05-17.51A11.3 11.3 0 0 0 12.04.66C5.77.66.66 5.76.66 12.04c0 2 .52 3.96 1.52 5.69L.57 23.63l6.04-1.58a11.35 11.35 0 0 0 5.43 1.38h.01c6.27 0 11.38-5.1 11.38-11.38 0-3.04-1.18-5.9-3.34-8.05z"/></svg>
+  </a>
+
+  <div class="quote-modal" id="quote-modal" role="dialog" aria-modal="true" aria-labelledby="quote-modal-title" hidden>
+    <div class="quote-modal-backdrop" data-close-quote></div>
+    <div class="quote-modal-dialog">
+      <button type="button" class="quote-modal-close" data-close-quote aria-label="Close">&times;</button>
+      <h2 id="quote-modal-title" class="quote-modal-title" data-i18n="quote.title">Request a Free Quote</h2>
+      <p class="quote-modal-intro" data-i18n="quote.intro"></p>
+      <form id="quote-form" class="quote-form" novalidate>
+        <div class="quote-form-row">
+          <label><span data-i18n="quote.name">Name *</span><input type="text" name="name" autocomplete="name" required /></label>
+          <label><span data-i18n="quote.company">Company</span><input type="text" name="company" autocomplete="organization" /></label>
+        </div>
+        <div class="quote-form-row">
+          <label><span data-i18n="quote.email">Email</span><input type="email" name="email" autocomplete="email" /></label>
+          <label><span data-i18n="quote.phone">Phone</span><input type="tel" name="phone" autocomplete="tel" /></label>
+        </div>
+        <label><span data-i18n="quote.service">Type of service</span>
+          <select name="service">
+            <option data-i18n="services.commercial.title">Commercial Cleaning</option>
+            <option data-i18n="services.residential.title">Residential Cleaning</option>
+            <option data-i18n="services.oneTime.title">One-Time Cleaning</option>
+            <option data-i18n="services.custom.title">Custom Plans</option>
+            <option data-i18n="services.decluttering.title">Decluttering Service</option>
+            <option data-i18n="quote.other">Other / not sure yet</option>
+          </select>
+        </label>
+        <label><span data-i18n="quote.message">Your wishes</span><textarea name="message" rows="4" data-i18n-placeholder="quote.messagePlaceholder"></textarea></label>
+        <p class="quote-form-error" role="alert" hidden></p>
+        <div class="quote-actions">
+          <button type="submit" value="whatsapp" class="btn btn-whatsapp btn-large" data-i18n="quote.sendWhatsapp">Send via WhatsApp</button>
+          <button type="submit" value="email" class="btn btn-primary btn-large" data-i18n="quote.sendEmail">Send via email</button>
+        </div>
+        <p class="quote-fallback">
+          <span data-i18n="quote.fallback">Email app not opening?</span>
+          <a href="#" target="_blank" rel="noopener" id="quote-gmail" data-i18n="quote.gmail">Open in Gmail</a> ·
+          <a href="#" target="_blank" rel="noopener" id="quote-outlook" data-i18n="quote.outlook">Open in Outlook</a> ·
+          <button type="button" class="quote-copy" data-copy="info@crystalclear.nl" data-i18n="quote.copy">Copy email address</button>
+        </p>
+      </form>
+    </div>
+  </div>
 
   <script type="module" src="script.js"></script>
 </body>
