@@ -113,7 +113,7 @@ export const translations = {
     },
     benefits: {
       eyebrow: 'Onze belofte',
-      title: 'Wat U Van Ons Krijgt',
+      title: 'Wat u van ons krijgt',
       subtitle: 'Geen vage beloftes: dit zijn de concrete afspraken waar u op kunt rekenen.',
       items: [
         { title: 'Betrouwbare teams', desc: 'Een vast, gescreend team dat op tijd komt. Elke keer weer.' },
