@@ -138,7 +138,7 @@ export const translations = {
       areaValue: 'Amsterdam en omgeving'
     },
     quote: {
-      title: 'Vraag Een Gratis Offerte Aan',
+      title: 'Vraag een gratis offerte aan',
       intro: 'Vul het formulier in en verstuur uw aanvraag via WhatsApp of e-mail. U ontvangt binnen 24 uur een reactie.',
       name: 'Naam *',
       company: 'Bedrijfsnaam',
@@ -162,7 +162,7 @@ export const translations = {
       fields: { name: 'Naam', company: 'Bedrijf', email: 'E-mail', phone: 'Telefoon', service: 'Dienst', message: 'Wensen' }
     },
     finalCta: {
-      title: 'Op Zoek Naar Een Betrouwbare Schoonmaakpartner?',
+      title: 'Op zoek naar een betrouwbare schoonmaakpartner?',
       subtitle: 'We denken graag met u mee.',
       button: 'Vraag Een Gratis, Vrijblijvende Offerte Aan',
       response: 'Reactie binnen 24 uur'
